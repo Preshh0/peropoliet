@@ -1,0 +1,19 @@
+{% extends "shop/base.html" %}
+
+{% block title %}
+    Verify Payment 
+{% endblock %}
+{% block content %}
+    <h1>Please Verify your payment</h1>
+    <form id="paymentForm">
+        <div class="form-group">
+          <label for="reference_key">Please insert reference key </label>
+          <input type="text" id="reference_key"/>
+        </div>
+        <div class="form-submit">
+          <button type="submit"> Verify Payment </button>
+        </div>
+      </form>
+    
+
+{% endblock %}

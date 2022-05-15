@@ -1,0 +1,14 @@
+{% extends "shop/base.html" %}
+
+{% block title %}
+    Please save the reference key.
+{% endblock %}
+{% block content %}
+    <p>{{ payment.reference }}</p>
+    <p>Pay to the following account: {{ payment.address }}</p>
+    <p>{{payment.businessName}}</p>
+    <p>{{payment.coin}}</p>
+    <p>{{payment.cryptoAmount}}</p>
+    <p>{{payment.fiatAmount}</p>
+    <p>{{payment.currency}</p>
+{% endblock %}
